@@ -78,21 +78,20 @@ function Section8() {
                     </Grid>
 
                 </Grid>
-                <Box sx={{ width: "100%", height: "80px" }}></Box>
-                <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap" }}>
-                    <Box sx={{ width: "200px", padding: "10px" }}>
+                <Box sx={{ display: "flex", marginTop: "80px", justifyContent: { xs: "center", sm: "space-between" }, alignItems: "center", flexWrap: "wrap" }}>
+                    <Box sx={{ width: "200px", padding: "10px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img src="https://demo18.houzez.co/wp-content/uploads/2020/09/partner-02-e1582734691936.jpg" alt="" />
                     </Box>
-                    <Box sx={{ width: "200px", padding: "10px" }}>
+                    <Box sx={{ width: "200px", padding: "10px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img src="https://demo18.houzez.co/wp-content/uploads/2020/09/partner-01-e1582734705113.jpg" alt="" />
                     </Box>
-                    <Box sx={{ width: "200px", padding: "10px" }}>
+                    <Box sx={{ width: "200px", padding: "10px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img src="https://demo18.houzez.co/wp-content/uploads/2020/09/partner-03-e1582734671602.jpg" alt="" />
                     </Box>
-                    <Box sx={{ width: "200px", padding: "10px" }}>
+                    <Box sx={{ width: "200px", padding: "10px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img src="https://demo18.houzez.co/wp-content/uploads/2020/09/partner-05-e1582734603812.jpg" alt="" />
                     </Box>
-                    <Box sx={{ width: "200px", padding: "10px" }}>
+                    <Box sx={{ width: "200px", padding: "10px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img src="https://demo18.houzez.co/wp-content/uploads/2020/09/partner-04-e1582734649458.jpg" alt="" />
                     </Box>
                 </Box>

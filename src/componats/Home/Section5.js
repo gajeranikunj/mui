@@ -14,6 +14,7 @@ function Section5() {
   const [swip, setswip] = useState((window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 2 : 3));
 
   window.addEventListener("resize", () => { setswip(window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 2 : 3) });
+ 
   const data = [
     {
       url: "https://demo18.houzez.co/wp-content/uploads/2020/09/house-model-1-592x444.jpg",

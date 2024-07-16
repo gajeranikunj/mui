@@ -2,13 +2,13 @@ import React from 'react'
 
 import { EffectFade, Autoplay } from "swiper/modules";
 import { Box, Button, Container } from "@mui/material";
-function As1() {
+function Titels(props) {
     return (
         <>
         <Box sx={{
                 position: "relative",
                 minHeight: "400px",
-                backgroundImage: "url(https://demo18.houzez.co/wp-content/uploads/2020/09/image-2.jpg)",
+                backgroundImage: `url(${props.url})`,
                 backgroundSize: "cover",
                 backgroundPositionY: "50%",
             }}>
@@ -27,7 +27,7 @@ function As1() {
                 <Container maxWidth="lg" sx={{ width:"auto", position: "absolute", top: "150px", left: "100px", zIndex: "9910", display: "flex" }} >
                     <Box sx={{ width: "5px", backgroundColor: "#16BFBF" }}></Box>
                     <Box sx={{ marginLeft: "30px", fontSize: "50px", fontWeight: "700", color: "white" }}>
-                        About us
+                    {props.Name}
                     </Box>
                 </Container>
                 <svg
@@ -56,4 +56,4 @@ function As1() {
     )
 }
 
-export default As1
+export default Titels

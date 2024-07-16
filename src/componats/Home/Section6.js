@@ -9,7 +9,7 @@ function Section6() {
                     <Box sx={{ width: "90px", height: "3px", backgroundColor: "#16BFBF" }}>
                     </Box>
                 </Box>
-                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", fontSize: "40px", fontWeight: "700" }}>
+                <Box sx={{ display: "flex",flexWrap:"wrap",textAlign:"center", justifyContent: "center", alignItems: "center", fontSize: "40px", fontWeight: "700" }}>
                     <Box>
                         How we create our
                     </Box>
