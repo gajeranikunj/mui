@@ -9,24 +9,15 @@ function Titels(props) {
                 position: "relative",
                 minHeight: "400px",
                 backgroundImage: `url(${props.url})`,
+                backgroundColor: "#00233db3",
+                backgroundBlendMode:"multiply",
                 backgroundSize: "cover",
                 backgroundPositionY: "50%",
             }}>
-                <Box
-                    sx={{
-                        position: "absolute",
-                        width: "100%",
-                        height: "100%",
-                        backgroundColor: "#00233D",
-                        opacity: "0.5",
-                        top: "0",
-                        left: "0",
-                        zIndex: "10",
-                    }}
-                ></Box>
-                <Container maxWidth="lg" sx={{ width:"auto", position: "absolute", top: "150px", left: "100px", zIndex: "9910", display: "flex" }} >
+            
+                <Container maxWidth="lg" sx={{ width:"auto", position: "absolute", top: "150px", left: {xs:"20px",sm:"100px"}, zIndex: "99", display: "flex" }} >
                     <Box sx={{ width: "5px", backgroundColor: "#16BFBF" }}></Box>
-                    <Box sx={{ marginLeft: "30px", fontSize: "50px", fontWeight: "700", color: "white" }}>
+                    <Box sx={{ marginLeft: "30px", fontSize: "50px", fontWeight: "700", color: "white",lineHeight:"0.9" }}>
                     {props.Name}
                     </Box>
                 </Container>

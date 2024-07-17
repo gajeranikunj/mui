@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Solutions from './componats/Solutions';
-import Portfolio from './componats/Portfolio';
 import News from './componats/News';
 import Homemane from './componats/Home/Homemane';
 import About from './componats/About/About';
 import Services from './componats/Services/Services';
 import Contact_us from './componats/Contact_us/Contact_us';
+import Solutions from './componats/Solutions/Solutions';
+import Portfolio from './componats/Portfolio/Portfolio';
 
 function App() {
   return (

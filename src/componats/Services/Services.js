@@ -3,6 +3,7 @@ import { Box, Container, Grid, Typography } from '@mui/material'
 import CNavbare from '../CNavbare'
 import Footer from '../Footer'
 import Titels from '../Titels'
+import Sfooter from '../Sfooter'
 
 function Services() {
     return (
@@ -10,7 +11,7 @@ function Services() {
             <CNavbare />
             <Titels url={"https://demo18.houzez.co/wp-content/uploads/2020/09/image-10.jpg"} Name={"Services"} />
 
-            <Container sx={{marginBottom:"50px"}}>
+            <Container sx={{ marginBottom: "50px" }}>
                 <Grid container sx={{ justifyContent: "space-around", marginTop: '50px' }}>
                     <Grid lg={5} ><img src="https://demo18.houzez.co/wp-content/uploads/elementor/thumbs/image-14-ovlybm96lfqpjhmpwlmp835quzmmuwwwzi4qlq9g00.jpg" alt="" width={'100%'} /></Grid>
                     <Grid lg={5}>
@@ -43,6 +44,7 @@ function Services() {
                     </Grid>
                 </Grid>
             </Container>
+            <Sfooter />
             <Footer />
 
         </>

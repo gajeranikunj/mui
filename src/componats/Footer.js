@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
 import { SlSocialFacebook } from "react-icons/sl";
 import { RiTwitterXFill } from "react-icons/ri";
@@ -10,6 +10,8 @@ import { SiBehance } from 'react-icons/si';
 function Footer() {
     return (
         <>
+           
+
             <Box sx={{ backgroundColor: "#00233D", padding: "30px 0px", color: "white" }}>
                 <Box sx={{ width: "80%", margin: "auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap" }}>
                     <Box sx={{ display: "flex", alignItems: "center", width: "100px" }}>
@@ -49,11 +51,11 @@ function Footer() {
                         <Box sx={{ marginLeft: "5px" }}> Youtube </Box>
                     </Box>
                 </Box>
-                <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "50px"}}>
+                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "50px" }}>
                     <img src="https://demo18.houzez.co/wp-content/themes/houzez/img/logo-houzez-white.png" style={{ width: "150px" }} alt="" />
                 </Box>
-                <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "50px"}}>
-                © Houzez - All rights reserved
+                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "50px" }}>
+                    © Houzez - All rights reserved
                 </Box>
             </Box>
         </>

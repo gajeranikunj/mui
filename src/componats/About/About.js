@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 
 import { Box, Grid, Typography } from '@mui/material';
 import Titels from '../Titels';
+import Sfooter from '../Sfooter';
 function About() {
     return (
         <>
@@ -20,7 +21,7 @@ function About() {
                     <Typography sx={{ fontSize: { xs: "30px", sm: "30px", md: "40px" }, display: "flex", flexWrap: "wrap", fontWeight: "600", color: "black", paddingTop: "60px", lineHeight: "1", justifyContent: "center", alignItems: "center" }}>
                         We have been building houses for over 150 years
                     </Typography>
-                    <Grid container sx={{ marginTop: "50px", justifyContent: "space-around" }}>
+                    <Grid container sx={{ marginTop: "50px", justifyContent: "space-around"}}>
                         <Grid lg={5}>
                             <Typography variant='h6' sx={{ marginTop: "40px" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam massa purus, bibendum gravida orci nec, porta efficitur tellus. Nullam lacus enim, venenatis at enim et, fringilla sodales odio. Donec nec erat ac elit blandit facilisis dictum a neque. Vestibulum sem lectus, aliquet semper erat at, elementum congue mauris. Phasellus non rhoncus justo. Aliquam id porttitor massa. Vestibulum ornare ornare arcu, eget convallis nisl fringilla non.</Typography>
                         </Grid>
@@ -76,6 +77,7 @@ function About() {
                     </Grid>
                 </Box>
             </Box>
+            <Sfooter/>
             <Footer />
         </>
     )

@@ -11,13 +11,14 @@ import "swiper/css/pagination";
 
 import { EffectFade, Autoplay } from "swiper/modules";
 import { Box, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Homes1() {
   return (
     <>
-      <Box sx={{ position: "relative",height: {xs:"500px",sm:"800px"}  }}>
+      <Box sx={{ position: "relative", height: { xs: "500px", sm: "800px" } }}>
         <Swiper
-          style={{height:"100%" }}
+          style={{ height: "100%" }}
           spaceBetween={30}
           effect={"fade"}
           loop={true}
@@ -69,20 +70,20 @@ function Homes1() {
           position: "absolute",
           top: 0,
           width: "100%",
-          height:"100%",
+          height: "100%",
           zIndex: "100",
           display: "flex", alignItems: "center"
         }}>
 
           <Box
             sx={{
-              margin:{xs:"auto",sm:"0"},
-              marginLeft: {xs:"auto",sm:"100px"},
+              margin: { xs: "auto", sm: "0" },
+              marginLeft: { xs: "auto", sm: "100px" },
               color: "white",
-              maxWidth: {xs:"90%",sm:"700px"},
+              maxWidth: { xs: "90%", sm: "700px" },
             }}
           >
-            <Box sx={{ fontSize: { xs: "22px", sm: "50px", md: "70px" }, lineHeight: "1.2", fontWeight: "700" }}>
+            <Box sx={{ fontSize: { xs: "27px", sm: "50px", md: "70px" }, lineHeight: "1.2", fontWeight: "700" }}>
               We have been building houses for over 150 years
             </Box>
             <Box
@@ -97,17 +98,22 @@ function Homes1() {
               This demo can be used by developer companies which want to present
               their real estate projects taking advantage of the Houzez features
             </Box>
-            <Button
-              sx={{
-                backgroundColor: "#2FA6A4",
-                padding: { xs: "5px 10px", sm: "10px 20px" },
-                color: "white",
-                fontSize: { xs: "18px", sm: "20px" },
-                marginTop: "30px",
-              }}
-            >
-              Request our brochure
-            </Button>
+            <Link to={"/Contact_us"} style={{ color: "white", textDecoration: "none" }}>
+              <Button
+                sx={{
+                  backgroundColor: "#2FA6A4",
+                  padding: { xs: "5px 10px", sm: "10px 20px" },
+                  color: "white",
+                  fontSize: { xs: "18px", sm: "20px" },
+                  marginTop: "30px",
+                  '&:hover': {
+                    backgroundColor: '#16BFBF',
+                  },
+                }}
+              >
+                Request our brochure
+              </Button>
+            </Link>
           </Box>
         </Box>
 

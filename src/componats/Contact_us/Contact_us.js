@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CNavbare from "../CNavbare";
 import Footer from "../Footer";
 import Titels from "../Titels";
-import { Box, Container, Grid, MenuItem, Select, TextField } from "@mui/material";
+import { Box, Button, Checkbox, Container, FormControlLabel, Grid, MenuItem, Select, TextField } from "@mui/material";
 
 function Contact_us() {
   const [age, setAge] = React.useState('');
@@ -25,7 +25,7 @@ function Contact_us() {
       />
       <Box>
         <Container maxWidth="md">
-          <Box sx={{ width: "85%", margin: "auto" }}>
+          <Box sx={{ width: "85%", margin: "auto", marginBottom: "100px" }}>
 
             <Box sx={{ fontSize: "22px", color: "gray" }}>
               The Inquiry Form widget allows you to design unique forms to capture your leads. This form automatically connects with the integrated Houzez CRM and your email inbox to keep everything on track.
@@ -49,7 +49,7 @@ function Contact_us() {
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6} sx={{ marginTop: "15px" }}>
                   <TextField
-                    aria-required
+                   required
                     id="outlined-required"
                     label="First Name"
                     type="text"
@@ -58,7 +58,7 @@ function Contact_us() {
                 </Grid>
                 <Grid item xs={12} sm={6} sx={{ marginTop: "15px" }}>
                   <TextField
-                    aria-required
+                   required
                     id="outlined-required"
                     label="Last Name"
                     type="text"
@@ -67,7 +67,7 @@ function Contact_us() {
                 </Grid>
                 <Grid item xs={12} sm={6} >
                   <TextField
-                    aria-required
+                   required
                     id="outlined-required"
                     label="Email Address"
                     type="email"
@@ -76,7 +76,7 @@ function Contact_us() {
                 </Grid>
                 <Grid item xs={12} sm={6} >
                   <TextField
-                    aria-required
+                   required
                     id="outlined-basic"
                     label="Mobile"
                     type="number"
@@ -97,7 +97,6 @@ function Contact_us() {
 
               <Box sx={{ marginTop: "30px", fontSize: "25px" }}>
                 Property
-
               </Box>
               <Select
                 value={type}
@@ -114,7 +113,7 @@ function Contact_us() {
               <Grid container spacing={2}>
                 <Grid item xs={12} sx={{ marginTop: "15px" }}>
                   <TextField
-                    aria-required
+                   required
                     label="Your budget"
                     type="number"
                     sx={{ width: "100%" }}
@@ -123,34 +122,53 @@ function Contact_us() {
 
                 <Grid item xs={12} sm={6} >
                   <TextField
-                    aria-required
-                    id="outlined-required"
-                    label="Email Address"
-                    type="email"
+                   required
+                    label="Number of beds"
+                    type="number"
                     sx={{ width: "100%" }}
                   />
                 </Grid>
                 <Grid item xs={12} sm={6} >
                   <TextField
-                    onChange={handleChange}
-                    aria-required
-                    id="outlined-basic"
+                   required
                     label="Mobile"
                     type="number"
                     variant="outlined"
-                    value={inputValue}
-                    onInput={(e) => {
-                      let value = e.target.value;
-                      value = value.replace(/\D/g, '').slice(0, 10);
-                      setInputValue(value);
-                      if (value.length === 10) {
-                        console.log(value);
-                      }
-                    }}
                     sx={{ width: "100%" }}
                   />
                 </Grid>
+
               </Grid>
+
+              <Box sx={{ marginTop: "30px", fontSize: "25px" }}>
+                Message
+              </Box>
+              <Grid container spacing={2} sx={{ paddingLeft: "16px", marginTop: "10px" }}>
+                <TextField
+                  xs={12}
+                  sx={{ width: "100%" }}
+                  id="w3review"
+                  name="w3review"
+                  label="W3Schools Review"
+                  multiline
+                  rows={3}
+                  variant="outlined"
+                />
+              </Grid>
+              <Box sx={{ width: "100%" }}>
+                <Box sx={{ marginTop: "20px" }}>
+                  <label abel for="vehicle1"> GDPR Agreement</label>
+                </Box>
+                <FormControlLabel
+                  sx={{ marginTop: "10px" }}
+                  control={<Checkbox id="vehicle1" name="inputWrapped" />}
+                  label="I consent to having this website store my submitted information"
+                />
+              </Box>
+              <Box sx={{marginTop:"10px"}}>
+                <Button type="submit" sx={{ width: "100%", color: "white", fontSize: "24px", backgroundColor: "#16bfbfc7", borderRadius: "10px", '&:hover': { backgroundColor: "#00ffff" } }}>Submit</Button>
+              </Box>
+
 
 
 
