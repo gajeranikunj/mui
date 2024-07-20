@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 import { EffectFade, Autoplay } from "swiper/modules";
 import { Box, Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import "./Home.css"
 
 function Homes1() {
   const [activeIndex, setActiveIndex] = useState(0);
