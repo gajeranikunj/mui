@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -9,10 +9,6 @@ import { Box, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 function Homes1() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  useEffect(() => {
-    console.log(activeIndex);
-  }, [activeIndex])
   const slides = [
     "https://demo18.houzez.co/wp-content/uploads/2020/09/image-9.jpg",
     "https://demo18.houzez.co/wp-content/uploads/2020/09/image-7.jpg",
@@ -23,13 +19,12 @@ function Homes1() {
     <>
       <Box sx={{ position: "relative", height: { xs: "500px", sm: "800px" } }}>
         <Swiper
-          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           style={{ height: "100%" }}
           spaceBetween={30}
           effect={"fade"}
           loop={true}
           autoplay={{
-            delay: 2000,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           modules={[EffectFade, Autoplay]}
@@ -38,14 +33,13 @@ function Homes1() {
           {slides.map((slide, index) => (
             <SwiperSlide
               key={index}
-              className="swiperimg"
               style={{
                 position: "relative",
                 overflow: "hidden",
                 backgroundImage: `url(${slide})`,
                 backgroundColor: "rgba(0,0,0,0.7)",
                 backgroundBlendMode: "multiply",
-                backgroundSize: activeIndex == index ? "100%" : "110%",
+                backgroundSize:"cover",
                 backgroundPosition: "center center"
               }}
             />
