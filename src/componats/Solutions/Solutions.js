@@ -5,6 +5,7 @@ import Sfooter from '../Sfooter'
 import Titels from '../Titels'
 import { Box, Container, Grid, Typography } from '@mui/material'
 import { FaRegCircleCheck } from "react-icons/fa6";
+import Gotop from '../gotop/Gotop'
 function Solutions() {
     return (
         <>
@@ -144,6 +145,7 @@ function Solutions() {
 
             <Sfooter />
             <Footer />
+            <Gotop/>
 
         </>
     )

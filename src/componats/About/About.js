@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import { Box, Grid, Typography } from '@mui/material';
 import Titels from '../Titels';
 import Sfooter from '../Sfooter';
+import Gotop from '../gotop/Gotop';
 function About() {
     return (
         <>
@@ -79,6 +80,8 @@ function About() {
             </Box>
             <Sfooter/>
             <Footer />
+            <Gotop/>
+
         </>
     )
 }

@@ -9,6 +9,7 @@ import Section7 from './Section7'
 import Section8 from './Section8'
 import Footer from '../Footer'
 import Sfooter from '../Sfooter'
+import Gotop from '../gotop/Gotop'
 
 function Homemane() {
     return (
@@ -23,7 +24,7 @@ function Homemane() {
             <Section8 />
             <Sfooter/>
             <Footer />
-            
+            <Gotop/>
         </>
     )
 }

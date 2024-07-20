@@ -3,6 +3,7 @@ import CNavbare from "../CNavbare";
 import Footer from "../Footer";
 import Titels from "../Titels";
 import { Box, Button, Checkbox, Container, FormControlLabel, Grid, MenuItem, Select, TextField } from "@mui/material";
+import Gotop from "../gotop/Gotop";
 
 function Contact_us() {
   const [age, setAge] = React.useState('');
@@ -178,6 +179,8 @@ function Contact_us() {
         </Container>
       </Box>
       <Footer />
+      <Gotop/>
+
     </>
   );
 }

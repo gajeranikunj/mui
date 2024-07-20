@@ -4,6 +4,7 @@ import CNavbare from '../CNavbare'
 import Footer from '../Footer'
 import Titels from '../Titels'
 import Sfooter from '../Sfooter'
+import Gotop from '../gotop/Gotop'
 
 function Services() {
     return (
@@ -46,6 +47,7 @@ function Services() {
             </Container>
             <Sfooter />
             <Footer />
+            <Gotop/>
 
         </>
     )
