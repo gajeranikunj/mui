@@ -143,15 +143,6 @@ function CNavbare() {
                 </Link>
               ))}
             </Box>
-            <Box
-              sx={{
-                marginLeft: "10px",
-                display: { xs: "none", md: "block" },
-                color: colorname ? "white" : "black",
-              }}
-            >
-              <MdOutlineLocalPhone /> +1 (800) 987 6543
-            </Box>
           </Toolbar>
         </Container>
       </AppBar>
